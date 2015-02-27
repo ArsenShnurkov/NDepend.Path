@@ -6,7 +6,9 @@ using System.Collections.Generic;
 using NDepend.Helpers;
 
 namespace NDepend.Path {
-   partial class PathHelpers {
+    using NDepend.Path.Interface;
+
+    partial class PathHelpers {
 
       private sealed class AbsoluteDirectoryPath : AbsolutePathBase, IAbsoluteDirectoryPath {
          internal AbsoluteDirectoryPath(string pathString)

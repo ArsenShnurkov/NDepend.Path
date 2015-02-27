@@ -3,7 +3,9 @@ using System;
 using System.Diagnostics;
 
 namespace NDepend.Path {
-   partial class PathHelpers {
+    using NDepend.Path.Interface;
+
+    partial class PathHelpers {
 
       private sealed class RelativeDirectoryPath : RelativePathBase, IRelativeDirectoryPath {
          internal RelativeDirectoryPath(string pathString)

@@ -3,7 +3,9 @@ using System.Diagnostics;
 using NDepend.Path;
 
 namespace NDepend.Test.Unit {
-   public static class DirForTest {
+    using NDepend.Path.Interface;
+
+    public static class DirForTest {
 
       public static IAbsoluteDirectoryPath ExecutingAssemblyDir {
          get {

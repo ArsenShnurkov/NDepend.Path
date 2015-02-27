@@ -11,7 +11,9 @@ using NDepend.Path;
 //            and refactored for our needs!
 //
 namespace NDepend.Helpers.Network {
-   internal static class UNCNetworkHelper {
+    using NDepend.Path.Interface;
+
+    internal static class UNCNetworkHelper {
 
 
       internal static IAbsoluteDirectoryPath[] GetExistingUNCShares() {

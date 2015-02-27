@@ -2,7 +2,9 @@ using System;
 using System.Diagnostics;
 
 namespace NDepend.Path {
-   partial class PathHelpers {
+    using NDepend.Path.Interface;
+
+    partial class PathHelpers {
 
       private sealed class RelativeFilePath : RelativePathBase, IRelativeFilePath {
          internal RelativeFilePath(string pathString)

@@ -3,8 +3,10 @@ using NDepend.Test;
 using NUnit.Framework;
 
 namespace NDepend.Path {
+    using NDepend.Path.Interface;
+    using NDepend.Helpers;
 
-   [TestFixture]
+    [TestFixture]
    public class Test_EnvVarPath_Resolving {
 
       [SetUp]

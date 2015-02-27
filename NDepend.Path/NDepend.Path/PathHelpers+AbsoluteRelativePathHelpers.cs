@@ -5,7 +5,9 @@ using System.Text;
 
 
 namespace NDepend.Path {
-   partial class PathHelpers {
+    using NDepend.Path.Interface;
+
+    partial class PathHelpers {
 
 
       private static class AbsoluteRelativePathHelpers {

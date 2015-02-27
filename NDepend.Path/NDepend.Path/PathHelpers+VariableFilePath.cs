@@ -5,8 +5,9 @@ using System.Diagnostics;
 using NDepend.Helpers;
 
 namespace NDepend.Path {
+    using NDepend.Path.Interface;
 
-   partial class PathHelpers {
+    partial class PathHelpers {
 
       private sealed class VariableFilePath : VariablePathBase, IVariableFilePath {
 

@@ -6,7 +6,9 @@ using System.Linq;
 using NUnit.Framework;
 
 namespace NDepend.Path {
-   [TestFixture]
+    using NDepend.Path.Interface;
+
+    [TestFixture]
    public class APIPresentation {
 
       [Test]

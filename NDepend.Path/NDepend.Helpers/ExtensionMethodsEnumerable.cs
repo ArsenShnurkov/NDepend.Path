@@ -7,9 +7,9 @@ using System.Diagnostics.Contracts;
 using System.Linq;
 
 namespace NDepend.Helpers {
+    using NDepend.Path.Interface;
 
-
-   ///<summary>
+    ///<summary>
    ///Provides a set of extension methods dedicated to enumerables. 
    ///</summary>
    public static class ExtensionMethodsEnumerable {

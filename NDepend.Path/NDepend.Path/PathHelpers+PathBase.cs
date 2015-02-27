@@ -1,13 +1,11 @@
 ﻿
 using System;
 using System.Diagnostics;
-using System.Xml;
-
-
 
 namespace NDepend.Path {
+    using NDepend.Path.Interface;
 
-   partial class PathHelpers {
+    partial class PathHelpers {
 
 
 

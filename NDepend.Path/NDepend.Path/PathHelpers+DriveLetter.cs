@@ -5,8 +5,9 @@ using System.IO;
 
 
 namespace NDepend.Path {
+    using NDepend.Path.Interface;
 
-   partial class PathHelpers {
+    partial class PathHelpers {
 
       private sealed class DriveLetter : IDriveLetter {
 

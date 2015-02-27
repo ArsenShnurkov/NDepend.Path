@@ -5,8 +5,9 @@ using System.Diagnostics.Contracts;
 using NDepend.Helpers;
 
 namespace NDepend.Path {
+    using NDepend.Path.Interface;
 
-   ///<summary>
+    ///<summary>
    ///Contains extensions methods to obtain a path object from a string and to check that a string indeed represents a valid path.
    ///</summary>
    public static partial class PathHelpers {

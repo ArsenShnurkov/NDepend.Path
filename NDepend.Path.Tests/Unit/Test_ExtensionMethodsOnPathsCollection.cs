@@ -6,7 +6,9 @@ using NDepend.Test;
 
 
 namespace NDepend.Path {
-   [TestFixture]
+    using NDepend.Path.Interface;
+
+    [TestFixture]
    public class Test_ExtensionMethodsOnPathsCollection {
 
       [SetUp]

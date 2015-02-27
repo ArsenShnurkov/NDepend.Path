@@ -6,8 +6,9 @@ using NDepend.Test;
 using NUnit.Framework;
 
 namespace NDepend.Path {
+    using NDepend.Path.Interface;
 
-   [TestFixture]
+    [TestFixture]
    public class Test_VariablePath {
 
       [SetUp]

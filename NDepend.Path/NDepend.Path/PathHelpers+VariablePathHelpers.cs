@@ -8,7 +8,9 @@ using System.Text;
 using NDepend.Helpers;
 
 namespace NDepend.Path {
-   partial class PathHelpers {
+    using NDepend.Path.Interface;
+
+    partial class PathHelpers {
 
       static class VariablePathHelpers {
          #region Determine if a string is a variable path and extract variables!

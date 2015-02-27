@@ -3,7 +3,9 @@ using NUnit.Framework;
 using NDepend.Test;
 
 namespace NDepend.Path {
-   [TestFixture]  
+    using NDepend.Path.Interface;
+
+    [TestFixture]  
    public class Test_FilePath {
       [SetUp]
       public void SetUp() {

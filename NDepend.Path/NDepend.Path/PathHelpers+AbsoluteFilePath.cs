@@ -3,9 +3,9 @@ using System.IO;
 using System;
 
 namespace NDepend.Path {
+    using NDepend.Path.Interface;
 
-
-   partial class PathHelpers {
+    partial class PathHelpers {
 
       private sealed class AbsoluteFilePath : AbsolutePathBase, IAbsoluteFilePath {
          internal AbsoluteFilePath(string pathString)

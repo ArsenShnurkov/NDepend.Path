@@ -6,7 +6,9 @@ using System.Linq;
 
 
 namespace NDepend.Path {
-   [TestFixture] 
+    using NDepend.Path.Interface;
+
+    [TestFixture] 
    public class Test_PathImpl {
  
       [SetUp]

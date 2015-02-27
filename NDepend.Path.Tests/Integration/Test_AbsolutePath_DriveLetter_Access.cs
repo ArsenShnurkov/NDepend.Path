@@ -4,7 +4,9 @@ using System.IO;
 using NDepend.Test;
 
 namespace NDepend.Path {
-   [TestFixture]
+    using NDepend.Path.Interface;
+
+    [TestFixture]
    public class Test_AbsolutePath_DriveLetter_Access {
 
 

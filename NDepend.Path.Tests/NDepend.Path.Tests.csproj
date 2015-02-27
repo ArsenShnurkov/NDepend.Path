@@ -106,6 +106,12 @@
   <ItemGroup>
     <None Include="NDepend.Path.Key.snk" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NDepend.Path.Interface\NDepend.Path.Interface.csproj">
+      <Project>{6ec31d2a-6d1c-49f9-97a1-7c80e105f611}</Project>
+      <Name>NDepend.Path.Interface</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
