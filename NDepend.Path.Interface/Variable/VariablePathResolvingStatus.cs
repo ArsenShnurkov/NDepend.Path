@@ -1,8 +1,5 @@
-﻿namespace NDepend.Path.Interface
+﻿namespace NDepend.Path.Interface.Variable
 {
-    using NDepend.Path.Interface.Core;
-    using NDepend.Path.Interface.Variable;
-
     ///<summary>
     ///Defines the result of the <see cref="IVariablePath"/>.<see cref="IVariablePath.TryResolve(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{string,string}},out IAbsolutePath)"/> method.
     ///</summary>

@@ -1,7 +1,5 @@
-﻿namespace NDepend.Path.Interface
+﻿namespace NDepend.Path.Interface.Core
 {
-    using NDepend.Path.Interface.Core;
-
     ///<summary>
     ///Defines a path mode, absolute, relative or prefixed with an environment variable.
     ///</summary>
