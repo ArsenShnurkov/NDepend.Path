@@ -6,6 +6,8 @@ using NDepend.Helpers;
 
 namespace NDepend.Path {
     using NDepend.Path.Interface;
+    using NDepend.Path.Interface.Core;
+    using NDepend.Path.Interface.Variable;
 
     partial class PathHelpers {
 

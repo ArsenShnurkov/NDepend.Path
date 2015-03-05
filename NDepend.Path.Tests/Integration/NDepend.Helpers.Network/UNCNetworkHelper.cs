@@ -12,6 +12,7 @@ using NDepend.Path;
 //
 namespace NDepend.Helpers.Network {
     using NDepend.Path.Interface;
+    using NDepend.Path.Interface.Core;
 
     internal static class UNCNetworkHelper {
 

@@ -14,6 +14,8 @@ using System.Diagnostics.Contracts;
 namespace NDepend.Path {
     using Interface;
 
+    using NDepend.Path.Interface.Core;
+
     ///<summary>
    ///Extension methods helpers on collection of paths.
    ///</summary>

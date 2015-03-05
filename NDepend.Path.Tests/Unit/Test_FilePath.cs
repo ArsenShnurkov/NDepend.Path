@@ -4,6 +4,7 @@ using NDepend.Test;
 
 namespace NDepend.Path {
     using NDepend.Path.Interface;
+    using NDepend.Path.Interface.Core;
 
     [TestFixture]  
    public class Test_FilePath {

@@ -4,6 +4,7 @@ using System.Diagnostics;
 
 namespace NDepend.Path {
     using NDepend.Path.Interface;
+    using NDepend.Path.Interface.Core;
 
     partial class PathHelpers {
 

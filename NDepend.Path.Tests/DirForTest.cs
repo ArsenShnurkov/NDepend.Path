@@ -4,6 +4,7 @@ using NDepend.Path;
 
 namespace NDepend.Test.Unit {
     using NDepend.Path.Interface;
+    using NDepend.Path.Interface.Core;
 
     public static class DirForTest {
 

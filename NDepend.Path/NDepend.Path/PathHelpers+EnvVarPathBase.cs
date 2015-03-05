@@ -7,6 +7,8 @@ using System.Diagnostics;
 
 namespace NDepend.Path {
     using NDepend.Path.Interface;
+    using NDepend.Path.Interface.Core;
+    using NDepend.Path.Interface.EnvVar;
 
     partial class PathHelpers {
 

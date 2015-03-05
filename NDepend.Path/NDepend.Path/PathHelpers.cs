@@ -6,6 +6,9 @@ using NDepend.Helpers;
 
 namespace NDepend.Path {
     using NDepend.Path.Interface;
+    using NDepend.Path.Interface.Core;
+    using NDepend.Path.Interface.EnvVar;
+    using NDepend.Path.Interface.Variable;
 
     ///<summary>
    ///Contains extensions methods to obtain a path object from a string and to check that a string indeed represents a valid path.
