@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,6 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>NDepend.Path</RootNamespace>
     <AssemblyName>NDepend.Path</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <CodeContractsAssemblyMode>0</CodeContractsAssemblyMode>
@@ -59,12 +58,18 @@
     <CodeContractsShowSquigglies>True</CodeContractsShowSquigglies>
     <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
     <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
-    <CodeContractsCustomRewriterAssembly />
-    <CodeContractsCustomRewriterClass />
-    <CodeContractsLibPaths />
-    <CodeContractsExtraRewriteOptions />
-    <CodeContractsExtraAnalysisOptions />
-    <CodeContractsBaseLineFile />
+    <CodeContractsCustomRewriterAssembly>
+    </CodeContractsCustomRewriterAssembly>
+    <CodeContractsCustomRewriterClass>
+    </CodeContractsCustomRewriterClass>
+    <CodeContractsLibPaths>
+    </CodeContractsLibPaths>
+    <CodeContractsExtraRewriteOptions>
+    </CodeContractsExtraRewriteOptions>
+    <CodeContractsExtraAnalysisOptions>
+    </CodeContractsExtraAnalysisOptions>
+    <CodeContractsBaseLineFile>
+    </CodeContractsBaseLineFile>
     <CodeContractsCacheAnalysisResults>True</CodeContractsCacheAnalysisResults>
     <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
     <CodeContractsReferenceAssembly>DoNotBuild</CodeContractsReferenceAssembly>
@@ -87,11 +92,6 @@
     <AssemblyOriginatorKeyFile>NDepend.Path.Key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=736440c9b414ea16, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\bin\Debug\Microsoft.Contracts.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -103,27 +103,7 @@
     <Compile Include="NDepend.Helpers\ExtensionMethodsEnumerable.cs" />
     <Compile Include="NDepend.Helpers\ExtensionMethodsSet.cs" />
     <Compile Include="NDepend.Helpers\ExtensionMethodsString.cs" />
-    <Compile Include="NDepend.Helpers\IReadOnlyCollection.cs" />
-    <Compile Include="NDepend.Helpers\IReadOnlyList.cs" />
-    <Compile Include="NDepend.Path\AbsolutePathKind.cs" />
-    <Compile Include="NDepend.Path\EnvVarPathResolvingStatus.cs" />
     <Compile Include="NDepend.Path\ExtensionMethodsOnPathsCollection.cs" />
-    <Compile Include="NDepend.Path\IAbsoluteDirectoryPath.cs" />
-    <Compile Include="NDepend.Path\IAbsoluteFilePath.cs" />
-    <Compile Include="NDepend.Path\IAbsolutePath.cs" />
-    <Compile Include="NDepend.Path\IDirectoryPath.cs" />
-    <Compile Include="NDepend.Path\IDriveLetter.cs" />
-    <Compile Include="NDepend.Path\IEnvVarDirectoryPath.cs" />
-    <Compile Include="NDepend.Path\IEnvVarFilePath.cs" />
-    <Compile Include="NDepend.Path\IEnvVarPath.cs" />
-    <Compile Include="NDepend.Path\IFilePath.cs" />
-    <Compile Include="NDepend.Path\IPath.cs" />
-    <Compile Include="NDepend.Path\IRelativeDirectoryPath.cs" />
-    <Compile Include="NDepend.Path\IRelativeFilePath.cs" />
-    <Compile Include="NDepend.Path\IRelativePath.cs" />
-    <Compile Include="NDepend.Path\IVariableDirectoryPath.cs" />
-    <Compile Include="NDepend.Path\IVariableFilePath.cs" />
-    <Compile Include="NDepend.Path\IVariablePath.cs" />
     <Compile Include="NDepend.Path\PathHelpers+AbsoluteDirectoryPath.cs" />
     <Compile Include="NDepend.Path\PathHelpers+AbsoluteFilePath.cs" />
     <Compile Include="NDepend.Path\PathHelpers+AbsolutePathBase.cs" />
@@ -145,8 +125,6 @@
     <Compile Include="NDepend.Path\PathHelpers+VariablePathBase.cs" />
     <Compile Include="NDepend.Path\PathHelpers+VariablePathHelpers.cs" />
     <Compile Include="NDepend.Path\PathHelpers.cs" />
-    <Compile Include="NDepend.Path\PathMode.cs" />
-    <Compile Include="NDepend.Path\VariablePathResolvingStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -172,7 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NDepend.Path.Interface\NDepend.Path.Interface.csproj">
-      <Project>{6ec31d2a-6d1c-49f9-97a1-7c80e105f611}</Project>
+      <Project>{6EC31D2A-6D1C-49F9-97A1-7C80E105F611}</Project>
       <Name>NDepend.Path.Interface</Name>
     </ProjectReference>
   </ItemGroup>

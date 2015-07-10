@@ -54,17 +54,12 @@
     <AssemblyOriginatorKeyFile>NDepend.Path.Key.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NDepend.Path, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\bin\Debug\NDepend.Path.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\APIPresentation.cs">
@@ -107,8 +102,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NDepend.Path.Interface\NDepend.Path.Interface.csproj">
-      <Project>{6ec31d2a-6d1c-49f9-97a1-7c80e105f611}</Project>
+      <Project>{6EC31D2A-6D1C-49F9-97A1-7C80E105F611}</Project>
       <Name>NDepend.Path.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NDepend.Path\NDepend.Path.csproj">
+      <Project>{3736F44D-F747-4333-97B6-98064CDF89C7}</Project>
+      <Name>NDepend.Path</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,14 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
+# Visual Studio 2012
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NDepend.Path", "NDepend.Path\NDepend.Path.csproj", "{3736F44D-F747-4333-97B6-98064CDF89C7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NDepend.Path.Tests", "NDepend.Path.Tests\NDepend.Path.Tests.csproj", "{55BF97DF-6D0B-4911-8305-BB1D2211B8C6}"
-	ProjectSection(ProjectDependencies) = postProject
-		{3736F44D-F747-4333-97B6-98064CDF89C7} = {3736F44D-F747-4333-97B6-98064CDF89C7}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NDepend.Path.Interface", "NDepend.Path.Interface\NDepend.Path.Interface.csproj", "{6EC31D2A-6D1C-49F9-97A1-7C80E105F611}"
 EndProject
