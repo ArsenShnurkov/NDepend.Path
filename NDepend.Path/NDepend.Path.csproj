@@ -74,7 +74,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -94,12 +94,36 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NDepend.Helpers\ExtensionMethodsEnumerable.cs" />
     <Compile Include="NDepend.Helpers\ExtensionMethodsSet.cs" />
     <Compile Include="NDepend.Helpers\ExtensionMethodsString.cs" />
+    <Compile Include="NDepend.Helpers\IReadOnlyCollection.cs" />
+    <Compile Include="NDepend.Helpers\IReadOnlyList.cs" />
+    <Compile Include="NDepend.Path\AbsolutePathKind.cs" />
+    <Compile Include="NDepend.Path\EnvVarPathResolvingStatus.cs" />
     <Compile Include="NDepend.Path\ExtensionMethodsOnPathsCollection.cs" />
+    <Compile Include="NDepend.Path\IAbsoluteDirectoryPath.cs" />
+    <Compile Include="NDepend.Path\IAbsoluteFilePath.cs" />
+    <Compile Include="NDepend.Path\IAbsolutePath.cs" />
+    <Compile Include="NDepend.Path\IDirectoryPath.cs" />
+    <Compile Include="NDepend.Path\IDriveLetter.cs" />
+    <Compile Include="NDepend.Path\IEnvVarDirectoryPath.cs" />
+    <Compile Include="NDepend.Path\IEnvVarFilePath.cs" />
+    <Compile Include="NDepend.Path\IEnvVarPath.cs" />
+    <Compile Include="NDepend.Path\IFilePath.cs" />
+    <Compile Include="NDepend.Path\IPath.cs" />
+    <Compile Include="NDepend.Path\IRelativeDirectoryPath.cs" />
+    <Compile Include="NDepend.Path\IRelativeFilePath.cs" />
+    <Compile Include="NDepend.Path\IRelativePath.cs" />
+    <Compile Include="NDepend.Path\IVariableDirectoryPath.cs" />
+    <Compile Include="NDepend.Path\IVariableFilePath.cs" />
+    <Compile Include="NDepend.Path\IVariablePath.cs" />
     <Compile Include="NDepend.Path\PathHelpers+AbsoluteDirectoryPath.cs" />
     <Compile Include="NDepend.Path\PathHelpers+AbsoluteFilePath.cs" />
     <Compile Include="NDepend.Path\PathHelpers+AbsolutePathBase.cs" />
@@ -121,6 +145,8 @@
     <Compile Include="NDepend.Path\PathHelpers+VariablePathBase.cs" />
     <Compile Include="NDepend.Path\PathHelpers+VariablePathHelpers.cs" />
     <Compile Include="NDepend.Path\PathHelpers.cs" />
+    <Compile Include="NDepend.Path\PathMode.cs" />
+    <Compile Include="NDepend.Path\VariablePathResolvingStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

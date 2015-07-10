@@ -8,15 +8,15 @@
         <owners>psmacchia</owners>
         <projectUrl>https://github.com/psmacchia/NDepend.Path</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>$description$</description>
-        <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
-        <copyright>Copyright 2015</copyright>
+        <description>A OO framework to handle all sorts of paths operations: File, Directory, Absolute, Drive Letter, UNC, Relative, prefixed with an Environment Variable, that contain Variable... This framework is used in the product NDepend to handle all paths operations. http://www.NDepend.com</description>
+        <releaseNotes>Initial Release.</releaseNotes>
+        <copyright>Copyright 2013</copyright>
         <tags>Path File Directory Absolute Drive Letter UNC Relative</tags>
         <dependencies>
             <dependency id="NDepend.Path.Interface" version="1.0" />
         </dependencies>
     </metadata>
     <files>
-        <file src="..\bin\Debug\NDepend.Path.dll" target="lib\net35\NDepend.Path.dll" />
+        <file src="..\bin\Release\NDepend.Path.dll" target="lib\net35\NDepend.Path.dll" />
     </files>
 </package>
